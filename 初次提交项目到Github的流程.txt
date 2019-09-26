@@ -1,0 +1,8 @@
+1.安装好git之后,现在本地创建一个空文件夹，并且进入该文件夹
+2.git init：通过git init命令让新建的文件夹成为git可管理的仓库。然后将本地项目放到文件夹里
+3.git add .：执行git add .将项目添加到仓库。只要过程中不出现error提示，就都没什么问题，此时还可以通过git status 指令进行状态查看。 
+4.git commit -m "first commit"：执行git commit把项目提交到仓库。-m后面跟的是本次提交注释的内容，可以不写，但建议写上，不然容易报错，好了，到了这一步本地仓库创建就做好了，接下来就要连接github了 
+5.连接github：git remote add origin git地址
+6.
+(1)如果GitHub仓库里有了README文件，先执行：git pull --rebase origin master，再执行git push origin master
+(2).如果GitHub仓库的文件夹为空，则将文件push到github上:git push -u origin master
